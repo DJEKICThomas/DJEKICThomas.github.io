@@ -1,41 +1,90 @@
 <!doctype html>
 <html lang="fr">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>PorteFolio — Thomas</title>
-		<meta name="description" content="Portfolio de Thomas">
-		<link rel="stylesheet" href="css/style.css">
-	</head>
-	<body>
-		<header>
-			<div class="lang-switcher" aria-label="Language switcher">
-				<button class="lang-btn active" data-lang="fr" type="button">FR</button>
-				<button class="lang-btn" data-lang="en" type="button">EN</button>
-			</div>
-			<h1 data-i18n-key="siteTitle">Thomas — Portfolio</h1>
-			<p data-i18n-key="welcome">Bienvenue sur mon site</p>
-		</header>
-		<main>
-			<section>
-				<h2 data-i18n-key="aboutTitle">À propos</h2>
-				<p data-i18n-key="aboutText"> Thomas Djekic | Développeur | 25 ans | Liège | Belgique</p>
-			</section>
-			<section>
-				<h2 data-i18n-key="projectsTitle">Projets</h2>
-				<ul>
-					<li data-i18n-key="project1">Projet 1 — description</li>
-					<li data-i18n-key="project2">Projet 2 — description</li>
-				</ul>
-			</section>
-			<section>
-				<h2 data-i18n-key="contactTitle">Contact</h2>
-				<p><span data-i18n-key="contactText">Email :</span> <a href="mailto:thomas@example.com">thomas@example.com</a></p>
-			</section>
-		</main>
-		<footer>
-			<small data-i18n-key="footerText">&copy; Thomas</small>
-		</footer>
-		<script src="js/i18n.js"></script>
-	</body>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>PorteFolio — Thomas</title>
+        <meta name="description" content="Portfolio de Thomas">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class="page-shell">
+            <header class="hero">
+                <div class="lang-switcher" aria-label="Language switcher">
+                    <button class="lang-btn active" data-lang="fr" type="button">FR</button>
+                    <button class="lang-btn" data-lang="en" type="button">EN</button>
+                </div>
+
+                <div class="hero-content">
+                    <p class="eyebrow" data-i18n-key="heroRole"></p>
+                    <h1 data-i18n-key="siteTitle"></h1>
+                    <p class="hero-intro" data-i18n-key="welcome"></p>
+                </div>
+            </header>
+
+            <main>
+                <section class="card about-section">
+                    <div class="section-heading">
+                        <p class="section-kicker" data-i18n-key="aboutKicker"></p>
+                        <h2 data-i18n-key="aboutTitle"></h2>
+                    </div>
+                    <p class="about-text" data-i18n-key="aboutText"></p>
+                    <div class="skills-list">
+                        <span class="pill" data-i18n-key="skill1"></span>
+                        <span class="pill" data-i18n-key="skill2"></span>
+                        <span class="pill" data-i18n-key="skill3"></span>
+                        <span class="pill" data-i18n-key="skill4"></span>
+                        <span class="pill" data-i18n-key="skill5"></span>
+                        <span class="pill" data-i18n-key="skill6"></span>
+                        <span class="pill" data-i18n-key="skill7"></span>
+                        <span class="pill" data-i18n-key="skill8"></span>
+                        <span class="pill" data-i18n-key="skill9"></span>
+                        <span class="pill" data-i18n-key="skill10"></span>
+                        <span class="pill" data-i18n-key="skill11"></span>
+                    </div>
+                </section>
+
+                <section class="card">
+                    <div class="section-heading">
+                        <p class="section-kicker" data-i18n-key="projectsKicker"></p>
+                        <h2 data-i18n-key="projectsTitle"></h2>
+                    </div>
+
+                    <div class="projects-grid">
+                        <article class="project-card">
+                            <h3 data-i18n-key="project1Title"></h3>
+                            <p data-i18n-key="project1Text"></p>
+                            <div class="project-actions">
+                                <a href="https://djekicthomas.github.io/ProjetJeuFruit/game/jeuFruit.html" target="_blank" class="btn btn-primary" data-i18n-key="project1Link"></a>
+                                <a href="https://github.com/DJEKICThomas/ProjetJeuFruit" target="_blank" class="btn btn-secondary" data-i18n-key="project1Code"></a>
+                            </div>
+                        </article>
+
+                        <article class="project-card">
+                            <h3 data-i18n-key="project2Title"></h3>
+                            <p data-i18n-key="project2Text"></p>
+                            <div class="project-actions">
+                                <a href="https://github.com/DJEKICThomas/XMLProjet" target="_blank" class="btn btn-secondary" data-i18n-key="project2Code"></a>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+
+                <section class="card contact-section">
+                    <div class="section-heading">
+                        <p class="section-kicker" data-i18n-key="contactKicker"></p>
+                        <h2 data-i18n-key="contactTitle"></h2>
+                    </div>
+                    <p class="contact-copy" data-i18n-key="contactText"></p>
+                    <a href="mailto:thomas.djekic@gmail.com" class="contact-link">thomas.djekic@gmail.com</a>
+                </section>
+            </main>
+
+            <footer class="footer">
+                <small data-i18n-key="footerText"></small>
+            </footer>
+        </div>
+
+        <script src="js/i18n.js"></script>
+    </body>
 </html>

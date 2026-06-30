@@ -1,31 +1,68 @@
 const translations = {
   fr: {
     siteTitle: 'Thomas — Portfolio',
-    welcome: 'Bienvenue sur mon site',
+    welcome: 'Bienvenue sur mon site personnel',
+    heroRole: 'Développeur',
+    heroLocation: 'Liège · Belgique',
+    heroAge: '25 ans',
+    aboutKicker: 'Profil',
     aboutTitle: 'À propos',
-    aboutText: 'Thomas Djekic | Développeur | 25 ans | Liège | Belgique',
+    aboutText: 'Thomas DJEKIC | Développeur | 25 ans | Liège | Belgique',
+    skill1: 'JavaScript',
+    skill2: 'HTML & CSS',
+    skill3: 'XML / XSLT',
+    skill4: 'JAVA',
+    skill5: 'C/C++/C#',
+    skill6: 'Python',
+    skill7: 'React',
+    skill8: 'PHP',
+    skill9: 'PL/SQL',
+    skill10: 'AS400',
+    skill11: 'SQL Server',
+    projectsKicker: 'Réalisations',
     projectsTitle: 'Projets',
-    project1: 'Projet 1 — description',
-    project2: 'Projet 2 — description',
-    contactTitle: 'Contact',
-    contactText: 'Email :',
+    project1Title: 'Projet 1 — Jeu de fruits',
+    project1Text: "Un jeu d'arcade dynamique développé en JavaScript, pensé pour offrir une expérience rapide et ludique.",
+    project1Link: 'Lancer le jeu',
+    project1Code: 'Voir le code source',
+    project2Title: 'Projet 2 — XML & data engineering',
+    project2Text: 'Structuration d’un dataset médical, conversion CSV vers XML, création de schémas et développement de parsers comparatifs.',
+    project2Code: 'Voir le code source',
+    contactKicker: 'Contact',
+    contactTitle: 'Travaillons ensemble',
+    contactText: 'Vous pouvez me contacter par email pour discuter de projets ou d’opportunités.',
     footerText: '© Thomas'
   },
   en: {
     siteTitle: 'Thomas — Portfolio',
-    welcome: 'Welcome to my website',
+    welcome: 'Welcome to my personal website',
+    heroRole: 'Developer',
+    heroLocation: 'Liège · Belgium',
+    heroAge: '25 years old',
+    aboutKicker: 'Profile',
     aboutTitle: 'About',
-    aboutText: 'Thomas Djekic | Developer | 25 years | Liège | Belgium',
+    aboutText: 'Thomas DJEKIC | Developer | 25 years old | Liège | Belgium',
+    skill1: 'JavaScript',
+    skill2: 'HTML & CSS',
+    skill3: 'XML / XSLT',
+    skill4: 'Data engineering',
+    projectsKicker: 'Work',
     projectsTitle: 'Projects',
-    project1: 'Project 1 — description',
-    project2: 'Project 2 — description',
-    contactTitle: 'Contact',
-    contactText: 'Email:',
+    project1Title: 'Project 1 — Fruit game',
+    project1Text: 'A dynamic arcade game built in JavaScript, designed to deliver a fast and playful experience.',
+    project1Link: 'Launch the game',
+    project1Code: 'View source code',
+    project2Title: 'Project 2 — XML & data engineering',
+    project2Text: 'Structuring a medical dataset, converting CSV to XML, creating schemas and developing comparative parsers.',
+    project2Code: 'View source code',
+    contactKicker: 'Contact',
+    contactTitle: 'Let’s work together',
+    contactText: 'You can contact me by email to discuss projects or opportunities.',
     footerText: '© Thomas'
   }
 };
 
-let currentLanguage = 'en';
+let currentLanguage = 'fr';
 const buttons = document.querySelectorAll('.lang-btn');
 
 function t(key, lang = currentLanguage) {
@@ -38,7 +75,7 @@ function applyLanguage(lang) {
 
   document.querySelectorAll('[data-i18n-key]').forEach((element) => {
     const key = element.getAttribute('data-i18n-key');
-    element.innerHTML = t(key, lang);
+    element.textContent = t(key, lang);
   });
 
   buttons.forEach((button) => {
