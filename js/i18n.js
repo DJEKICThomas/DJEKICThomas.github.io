@@ -25,7 +25,7 @@ const translations = {
 
     // Projet 1 (Stage en entreprise)
     project1Title: 'Projet 1 — Espace Client Multi-Bases (Stage)',
-    project1Text: "Application web d'entreprise conçue pour centraliser et sécuriser l'accès aux services clients. Mise en œuvre d'une architecture backend robuste sous Spring Boot & JPA / Hibernate, avec gestion avancée de multi-datasources (bases de données multiples, isolation stricte des transactions et routage des requêtes).",
+    project1Text: "Application web d'entreprise conçue pour centraliser et sécuriser l'accès aux services clients. Mise en œuvre d'une architecture backend robuste sous Spring Boot & JPA / Hibernate, avec gestion avancée de multi-datasources (bases de données multiples et routage des requêtes).",
 
     // Projet 2 (Jeu de fruits)
     project2Title: 'Projet 2 — Jeu de fruits',
@@ -85,7 +85,7 @@ const translations = {
 
     // Project 1 (Internship Customer Portal)
     project1Title: 'Project 1 — Multi-Database Customer Portal (Internship)',
-    project1Text: 'Enterprise web application designed to centralize and secure client services access. Built with a robust backend architecture using Spring Boot & JPA / Hibernate, featuring advanced multi-datasource management (multiple databases, strict transaction isolation, and routing).',
+    project1Text: 'Enterprise web application designed to centralize and secure client services access. Built with a robust backend architecture using Spring Boot & JPA / Hibernate, featuring advanced multi-datasource management (multiple databases and routing).',
 
     // Project 2 (Fruit Game)
     project2Title: 'Project 2 — Fruit game',
